@@ -2,8 +2,8 @@
 Contributors: Horendra
 Tags: change wordpress login page logo, change default wordpress login logo
 Requires at least: 4.7
-Tested up to: 6.5.5
-Stable tag: 1.0
+Tested up to: 6.6.1
+Stable tag: 1.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,13 @@ Change the default wordpress logo that you see on the wp-admin login page
 
 == Description ==
 
-Custom Login Page Logo is a simple plugin that you can use to change the default logo that you see on the wp-admin login page. 
+Custom Login Page Logo is a very light weight, handy, easy to use, simple layout plugin that lets you change the default wordpress logo that you see on login page. 
+
+When you create your website, the wordpress uses it's own logo for login page ( wp-admin ) page which looks very unprofessional.
+
+But when you use this plugin to change the wordpress logo and add your own logo of the company/agency then it looks more professional and match with your brand.
+
+You can always change it whenever you want.
 
 == Installation ==
  
@@ -44,6 +50,10 @@ Simply deactivate and delete the plugin.
 5. Once saved, the logo will be displayed on the wp-admin page too (screenshot-5.png)
 
 == Changelog ==
+
+= 1.1 =
+* Compatible to wordpress 6.6.1.
+* Description updated
 
 = 1.0 =
 * Plugin released.
