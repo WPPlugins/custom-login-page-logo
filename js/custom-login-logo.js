@@ -1,13 +1,13 @@
 jQuery(document).ready(function ($) {
 
-    // Add logo on click on "Upload logo" button
+    // ADD LOGO ON CLICK ON "UPLOAD LOGO" BUTTON
     $('#upload_logo').on('click', function (e) {
         e.preventDefault();
 
         var customLogoUploader = wp.media({
-            title: 'Choose or Upload a Logo',
+            title: clpl_Translations.choose_or_upload_logo,
             button: {
-                text: 'Use this Logo'
+                text: clpl_Translations.use_this_logo
             },
             multiple: false
         });
@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
             $('#custom_login_logo').val(attachment.url);
         });
 
-        // Open media uploader
+        // OPEN MEDIA UPLOADER
         customLogoUploader.open();
     });
 });

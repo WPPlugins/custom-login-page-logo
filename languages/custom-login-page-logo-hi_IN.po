@@ -1,0 +1,68 @@
+# Copyright (C) 2024 Horendra Pal Singh Kandari
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Login Page Logo 1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-login-page-"
+"logo\n"
+"POT-Creation-Date: 2024-09-07T11:49:28+01:00\n"
+"PO-Revision-Date: 2024-09-07 16:31+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Domain: custom-login-page-logo\n"
+
+#. Plugin Name of the plugin
+#: custom_login_page_logo.php
+msgid "Custom Login Page Logo"
+msgstr "कस्टम लॉगिन पृष्ठ लोगो"
+
+#. Description of the plugin
+#: custom_login_page_logo.php
+msgid "Allows users to customize the logo on the WordPress login page."
+msgstr "उपयोगकर्ताओं को वर्डप्रेस लॉगिन पृष्ठ पर लोगो को अनुकूलित करने की अनुमति देता है।"
+
+#. Author of the plugin
+#: custom_login_page_logo.php
+msgid "Horendra Pal Singh Kandari"
+msgstr "होरेन्द्र पाल सिंह कंडारी"
+
+#: admin-menu.php:10
+msgid "Custom Login Page Logo Settings"
+msgstr "कस्टम लॉगिन पृष्ठ लोगो सेटिंग्स"
+
+#: admin-menu.php:23
+msgid "Custom Login Logo"
+msgstr "कस्टम लॉगिन लोगो"
+
+#: admin-menu.php:24
+msgid "Login Logo"
+msgstr "लॉगिन लोगो"
+
+#: functions.php:25
+msgid "Choose or Upload a Logo"
+msgstr "लोगो चुनें या अपलोड करें"
+
+#: functions.php:26
+msgid "Use this Logo"
+msgstr "इस लोगो का उपयोग करें"
+
+#: settings-fields.php:10
+msgid "Upload Logo"
+msgstr "लोगो अपलोड करें"
+
+#: settings-fields.php:20
+msgid "Upload or select a custom logo for the login page."
+msgstr "लॉगिन पृष्ठ के लिए कस्टम लोगो अपलोड करें या चुनें।"
+
+#: settings-fields.php:29
+msgid "Custom Login Logo Settings"
+msgstr "कस्टम लॉगिन लोगो सेटिंग्स"
+
+#: settings-fields.php:37
+msgid "Custom Logo URL"
+msgstr "कस्टम लोगो यूआरएल"

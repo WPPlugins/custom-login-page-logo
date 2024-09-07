@@ -1,0 +1,66 @@
+# Copyright (C) 2024 Horendra Pal Singh Kandari
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Login Page Logo 1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-login-page-logo\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-09-07T11:49:28+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: custom-login-page-logo\n"
+
+#. Plugin Name of the plugin
+#: custom_login_page_logo.php
+msgid "Custom Login Page Logo"
+msgstr ""
+
+#. Description of the plugin
+#: custom_login_page_logo.php
+msgid "Allows users to customize the logo on the WordPress login page."
+msgstr ""
+
+#. Author of the plugin
+#: custom_login_page_logo.php
+msgid "Horendra Pal Singh Kandari"
+msgstr ""
+
+#: admin-menu.php:10
+msgid "Custom Login Page Logo Settings"
+msgstr ""
+
+#: admin-menu.php:23
+msgid "Custom Login Logo"
+msgstr ""
+
+#: admin-menu.php:24
+msgid "Login Logo"
+msgstr ""
+
+#: functions.php:25
+msgid "Choose or Upload a Logo"
+msgstr ""
+
+#: functions.php:26
+msgid "Use this Logo"
+msgstr ""
+
+#: settings-fields.php:10
+msgid "Upload Logo"
+msgstr ""
+
+#: settings-fields.php:20
+msgid "Upload or select a custom logo for the login page."
+msgstr ""
+
+#: settings-fields.php:29
+msgid "Custom Login Logo Settings"
+msgstr ""
+
+#: settings-fields.php:37
+msgid "Custom Logo URL"
+msgstr ""
