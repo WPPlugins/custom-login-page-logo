@@ -12,8 +12,9 @@ function clpl_logo_settings_page() {
         settings_fields('clpl_logo_settings');
         do_settings_sections('clpl_logo_settings');
         submit_button();
-        echo'</form>
-    </div>';
+        echo'</form>';
+        settings_errors();
+    echo'</div>';
     
 }
 

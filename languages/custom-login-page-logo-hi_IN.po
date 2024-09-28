@@ -2,11 +2,11 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Custom Login Page Logo 1.1\n"
+"Project-Id-Version: Custom Login Page Logo 1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-login-page-"
 "logo\n"
-"POT-Creation-Date: 2024-09-07T11:49:28+01:00\n"
-"PO-Revision-Date: 2024-09-07 16:31+0530\n"
+"POT-Creation-Date: 2024-09-19T04:52:40+01:00\n"
+"PO-Revision-Date: 2024-09-19 09:28+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hi\n"
@@ -35,34 +35,50 @@ msgstr "होरेन्द्र पाल सिंह कंडारी"
 msgid "Custom Login Page Logo Settings"
 msgstr "कस्टम लॉगिन पृष्ठ लोगो सेटिंग्स"
 
-#: admin-menu.php:23
+#: admin-menu.php:24
 msgid "Custom Login Logo"
 msgstr "कस्टम लॉगिन लोगो"
 
-#: admin-menu.php:24
+#: admin-menu.php:25
 msgid "Login Logo"
 msgstr "लॉगिन लोगो"
 
-#: functions.php:25
+#: functions.php:45
 msgid "Choose or Upload a Logo"
 msgstr "लोगो चुनें या अपलोड करें"
 
-#: functions.php:26
+#: functions.php:46
 msgid "Use this Logo"
 msgstr "इस लोगो का उपयोग करें"
 
-#: settings-fields.php:10
+#: settings-fields.php:11
 msgid "Upload Logo"
 msgstr "लोगो अपलोड करें"
 
-#: settings-fields.php:20
-msgid "Upload or select a custom logo for the login page."
+#: settings-fields.php:60
+msgid "(Upload or select a custom logo for the login page.)"
 msgstr "लॉगिन पृष्ठ के लिए कस्टम लोगो अपलोड करें या चुनें।"
 
-#: settings-fields.php:29
+#: settings-fields.php:69
 msgid "Custom Login Logo Settings"
 msgstr "कस्टम लॉगिन लोगो सेटिंग्स"
 
-#: settings-fields.php:37
+#: settings-fields.php:77
 msgid "Custom Logo URL"
 msgstr "कस्टम लोगो यूआरएल"
+
+#: settings-fields.php:85
+msgid "Custom Logo Width"
+msgstr "कस्टम लोगो की चौड़ाई"
+
+#: settings-fields.php:93
+msgid "Custom Logo Width Unit"
+msgstr "कस्टम लोगो चौड़ाई इकाई"
+
+#: settings-fields.php:101
+msgid "Custom Logo Height"
+msgstr "कस्टम लोगो ऊंचाई"
+
+#: settings-fields.php:108
+msgid "Custom Logo Height Unit"
+msgstr "कस्टम लोगो ऊंचाई इकाई"
