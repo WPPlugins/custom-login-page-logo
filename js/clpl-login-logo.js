@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    // ADD LOGO ON CLICK ON "UPLOAD LOGO" BUTTON
+    // ===== ADD LOGO ON CLICK ON "UPLOAD LOGO" BUTTON =====//
     $('#upload_logo').on('click', function (e) {
         e.preventDefault();
 
@@ -17,7 +17,7 @@ jQuery(document).ready(function ($) {
             $('#custom_login_logo').val(attachment.url);
         });
 
-        // OPEN MEDIA UPLOADER
+        // ===== OPEN MEDIA UPLOADER =====//
         customLogoUploader.open();
     });
 });

@@ -1,4 +1,4 @@
-/* CLPL CUSTOM STYLESHEET */
+/***** CLPL CUSTOM STYLESHEET *****/
 
 #clpl_logo_container{
     height:auto; 
@@ -8,4 +8,7 @@
     width:150px; 
     height:auto;  
     margin:15px 0;
+}
+p.clpl_description{
+    font-style: italic;
 }
