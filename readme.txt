@@ -3,9 +3,9 @@ Contributors: Horendra
 Donate link: https://www.paypal.me/horendrasingh
 Tags: change WP admin logo, change login logo, custom login logo, wordpress logo, logo customization
 Requires at least: 4.7
-Tested up to: 6.6.1
-Version: 1.3.1
-Stable tag: 1.3.1
+Tested up to: 6.9
+Version: 1.3.2
+Stable tag: 1.3.2
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,11 +14,9 @@ A simple, secure and very light weight plugin to change wordpress logo that you 
 
 == Description ==
 
-"Custom Login Page Logo" is a very light weight, handy, easy to use, simple layout plugin that lets you change the default wordpress logo that you see on login page. 
+"Custom Login Page Logo" is a very light weight, handy, easy to use, simple layout plugin that lets you change wordpress logo that you see on login page. 
 
-When you create your website, the wordpress uses it's own logo for login page ( wp-admin ) page which looks very unprofessional.
-
-But when you use this plugin to change the wordpress logo and add your own logo of the company/agency then it looks more professional and match with your brand.
+When you create your website, the wordpress uses it's own logo for login page (wp-admin) which looks very unprofessional but when you use this plugin then you can add your own logo of the company/agency which looks more professional and match with your brand.
 
 You can always change it whenever you want.
 
@@ -30,6 +28,8 @@ You can always change it whenever you want.
 * Can add logo height and width with unit.
 * Can add link to the logo for redirect to anywhere on the web.
 * Can add shadow to the logo.
+* Can add logo padding.
+* Can add logo border radius.
 * Doesn't impact on your website speed.
 
 ==  Translation  ==
@@ -66,7 +66,7 @@ That's it, next time when you login with wp-admin you will get a new logo
 1. Go to Plugins admin menu. 
 1. Simply deactivate and delete the plugin.
 
-= Do you offer support =
+= Do you offer support? =
 
 YES, For support or inquiries, please fill out the following [form](https://forms.gle/Y8HjwnVLBsuciXh97)
 
@@ -88,9 +88,14 @@ If you want this plugin in your language then you can contact me via this contac
 
 == Changelog ==
 
+= 1.3.2 =
+* Logo radius is added
+* Logo padding is added
+* Translation file is Updated
+
 = 1.3.1 =
 * Short, and Long Description are updated
-* Screenshote are updated
+* Screenshots are updated
 * Titles are added
 * Logo redirect URL is added
 * Logo shadow is added
