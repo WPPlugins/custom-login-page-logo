@@ -37,6 +37,7 @@ function clpl_enqueue_styles() {
     // ========== FORM ========== //
 
     $form_bg_color                  = $options['form_bg_color'];
+    $form_border_color              = $options['form_border_color'];
     $form_btn_bg_color              = $options['form_btn_bg_color'];
     $form_eye_icon_color            = $options['form_eye_icon_color'];
     $form_label_color               = $options['form_label_color'];
@@ -134,7 +135,12 @@ function clpl_enqueue_styles() {
                         height: ' . esc_attr($logo_height) . esc_attr($logo_height_unit) . ';
                         background-size: cover;
                         background-repeat: no-repeat;
-                        background-position: center;';
+                        background-position: center;
+                        margin-bottom:48px;';
+                } else{
+                    echo 'background-image: url(' . esc_url( admin_url( 'images/wordpress-logo.svg' ) ) . ');
+                    margin-bottom:48px;';
+
                 }
                 
                 if(!empty($logo_border_radius)){
@@ -162,7 +168,6 @@ function clpl_enqueue_styles() {
         if(!empty($form_bg_color)){
             echo '#loginform, #lostpasswordform {   
                 background-color:'.esc_attr($form_bg_color).';
-                border:1px solid '.esc_attr($form_bg_color).';
             }';
         } 
         if(!empty($form_btn_bg_color)){
@@ -184,6 +189,11 @@ function clpl_enqueue_styles() {
         if(!empty($form_btn_txt_color)){
             echo 'body.login #loginform .button-primary, body.login #lostpasswordform .button-primary{
                 color:'.esc_attr($form_btn_txt_color).';
+            }';
+        }
+        if(!empty($form_border_color)){
+            echo '#loginform, #lostpasswordform {   
+                border:1px solid '.esc_attr($form_border_color).';
             }';
         }
         if(!empty($form_btn_border_color)){

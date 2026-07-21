@@ -21,7 +21,7 @@ function clpl_default_options_with_values_new() {
         // ========== BACKGROUND ========== //
 
         'background_type'           => 'color',
-        'background_color'          => '#FFFFFF',
+        'background_color'          => '#F0F0F1',
         'background_img'            => '',
         'background_img_size'       => 'cover', 
         'background_img_position'   => 'center center',
@@ -31,6 +31,7 @@ function clpl_default_options_with_values_new() {
         // ========== FORM ========== //
 
         'form_bg_color'                     => '#FFFFFF',
+        'form_border_color'                 => '#CBD5E1',
         'form_label_color'                  => '#3c434a',
         'form_txtfield_border_color'        => '#2271b1',
         'form_txtfield_bg_color'            => '#FFFFFF',
@@ -62,6 +63,9 @@ function clpl_default_options_with_values_new() {
         'lang_switch_btn_hover_bg_color'        => '#FFFFFF',
         'lang_switch_btn_hover_txt_color'       => '#2271b1',
         'lang_switch_btn_hover_border_color'    => '#2271b1',
+
+        // ========== CUSTOM CSS ========== //
+        'custom_css'    =>  '',
 
         // ========== REVIEW ========== //
 

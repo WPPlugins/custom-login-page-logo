@@ -22,7 +22,7 @@
                             );
                         ?>"
                    class="nav-tab <?php echo ($active_tab == 'logo') ? 'nav-tab-active' : ''; ?> ">
-                   Logo Settings
+                   Logo
                 </a>
                 <a href="<?php 
                             echo esc_url(
@@ -86,7 +86,6 @@
     }
 
     // ========== DISPLAYS - LOGO VISIBILITY ========== //
-
     function clpl_logo_display_field_callback(){
 
         $logo_display = esc_attr(clpl_get_option('logo_display'));
@@ -115,11 +114,13 @@
                     echo '<img src="' . esc_url($logo_url) . '" 
                         title="' . esc_attr(basename($logo_url)) . '" 
                         alt="Logo image" />';
+                } else{
+                    echo"No Logo Selected";
                 }
             echo '</div>';
             echo '<button class="button button-primary" id="upload_logo">' . esc_html__('Select Logo', 'custom-login-page-logo') . '</button>';
-            $remove_style = empty($logo_url) ? 'style="display:none;"' : '';
-            echo '<button class="button button-secondary" id="remove_logo"' . $remove_style . '>' . esc_html__('Remove Logo', 'custom-login-page-logo') . '</button>';
+            
+            echo '<button class="button button-secondary" id="remove_logo">' . esc_html__('Remove Logo', 'custom-login-page-logo') . '</button>';
         echo'</div>';
 
     }
@@ -130,7 +131,8 @@
         $width = clpl_get_option('logo_width');
         echo'<div class="clpl-section">';
             echo '<input type="number" name="clpl_settings[logo_width]" id="clpl_logo_width" min="0" max="600" 
-              placeholder="100" title = "Enter logo width" value="' . esc_attr($width) . '" />';
+                  placeholder="100" title = "Enter logo width" value="' . esc_attr($width) . '" />';
+
             echo '<p class="description clpl_description">('.esc_html__('Enter logo width', 'custom-login-page-logo').')</p>';
         echo'</div>';
     }
@@ -223,7 +225,6 @@
     }
 
     // ========== DISPLAYS BG TYPE ========== //
-
     function clpl_bg_type_callback(){
 
         $background_type = clpl_get_option('background_type') ?: 'color';
@@ -246,7 +247,7 @@
         $background_color = clpl_get_option('background_color');
         echo '<input type="text" name="clpl_settings[background_color]" id="clpl_background_color" 
         class="clpl-color-field" title="Select background color" 
-        value="' . esc_attr($background_color) . '" data-default-color="#FFFFFF" />';
+        value="' . esc_attr($background_color) . '" data-default-color="#F0F0F1" />';
         echo '<p class="description clpl_description">('.esc_html__('Select background color', 'custom-login-page-logo').')</p>';
     }
 
@@ -258,15 +259,20 @@
          autocomplete="on" 
          placeholder="Enter background image URL" title="'.esc_attr($background_image).'" 
          value="' . esc_url($background_image) . '"  />';
-        echo '<button class="button button-secondary" id="upload_bg_img">' . esc_html__('Upload background image', 'custom-login-page-logo') . '</button>';
         echo '<p class="description clpl_description">('.esc_html__('(Upload image or enter a custom URL with http or https)', 'custom-login-page-logo').')</p>';
-        
-        if (!empty($background_image)) {
-            echo '<div id="clpl_bg_img_container">
-                    <img src="' . esc_url($background_image) . '" 
-                    title="' . esc_attr(basename($background_image)) . '" alt = "Background image" />
-                  </div>';
-        }
+         
+        echo '<div id="clpl_bg_img_container">';
+            if (!empty($background_image)) {
+                echo'<img src="' . esc_url($background_image) . '" 
+                    title="' . esc_attr(basename($background_image)) . '" 
+                    alt = "Background image" />';
+            } else{
+                    echo"No Background Selected";
+                }
+        echo'</div>';
+
+        echo '<button class="button button-primary" id="upload_bg_img">' . esc_html__('Upload background image', 'custom-login-page-logo') . '</button>';
+        echo '<button class="button button-secondary" id="remove_bg_img">' . esc_html__('Remove background image', 'custom-login-page-logo') . '</button>';
     }
 
     // ========== DISPLAYS BACKGROUND IMAGE SIZE ========== //
@@ -409,6 +415,16 @@
         class="clpl-color-field" title="Select form button text color" 
         value="' . esc_attr($form_btn_txt_color) . '" data-default-color="#FFFFFF" />';
         echo '<p class="description clpl_description">('.esc_html__('Select form button text color', 'custom-login-page-logo').')</p>';
+    }
+
+    // ========== DISPLAYS FORM BORDER COLOR ========== //
+    function clpl_form_border_color_callback(){
+
+        $form_border_color = clpl_get_option('form_border_color');
+        echo '<input type="text" name="clpl_settings[form_border_color]" id="clpl_form_border_color" 
+        class="clpl-color-field" title="Select form border color" 
+        value="' . esc_attr($form_border_color) . '" data-default-color="#CBD5E1" />';
+        echo '<p class="description clpl_description">('.esc_html__('Select form border color', 'custom-login-page-logo').')</p>';
     }
 
     // ========== DISPLAYS FORM BUTON BORDER COLOR ========== //
@@ -651,8 +667,13 @@
     }
 
     // ========== DISPLAYS ADVANCED ========== //
-    function clpl_advanced_callback(){
 
+    function clpl_advanced_callback(){
+        $custom_css =   clpl_get_option('custom_css');
+        echo'<textarea name="clpl_settings[custom_css]" id="clpl_custom_css" title="Enter custom CSS for the login page" rows="20" cols="80">'
+            .esc_textarea($custom_css).
+            '</textarea>';
+        echo '<p class="description clpl_description">('.esc_html__('Enter custom CSS for the login page', 'custom-login-page-logo').')</p>';
     }
    
     // DEFAULT VALUES OF THE OPTIONS OF THE PLUGIN
@@ -1119,6 +1140,13 @@
             'clpl_login_form_txt_color_section'
         );
         add_settings_field(
+            'clpl_form_border_color',
+             __('Form', 'custom-login-page-logo'), // FORM BUTTON BORDER COLOR
+            'clpl_form_border_color_callback',
+            'clpl_form_tab',
+            'clpl_login_form_border_color_section'
+        );
+        add_settings_field(
             'clpl_form_btn_border_color',
              __('Button', 'custom-login-page-logo'), // FORM BUTTON BORDER COLOR
             'clpl_form_btn_border_color_callback',
@@ -1266,7 +1294,7 @@
 
         add_settings_field(
             'clpl_advanced',
-             __('Coming soon...', 'custom-login-page-logo'), // ADVANCE
+             __('Custom CSS', 'custom-login-page-logo'), // ADVANCE
             'clpl_advanced_callback',
             'clpl_advanced_tab',
             'clpl_advanced_section'
@@ -1291,6 +1319,7 @@
             $input = wp_parse_args($input, $existing);
 
             $allowed_units          = array('px', '%');
+            $allowed_bg_type        = array('color', 'image'); 
             $allowed_bg_img_size    = array('cover', 'contain', 'auto'); 
             $allowed_bg_img_pos     = array(
                 'center center',
@@ -1400,6 +1429,10 @@
                 $input['form_btn_txt_color']
             ) ?: $defaults['form_btn_txt_color'];
 
+            $sanitized['form_border_color']   = sanitize_hex_color(
+                $input['form_border_color']
+            ) ?: $defaults['form_border_color'];
+
             $sanitized['form_btn_border_color']   = sanitize_hex_color(
                 $input['form_btn_border_color']
             ) ?: $defaults['form_btn_border_color'];
@@ -1495,6 +1528,12 @@
             $sanitized['lang_switch_btn_hover_border_color']   = sanitize_hex_color(
                 $input['lang_switch_btn_hover_border_color']
             ) ?: $defaults['lang_switch_btn_hover_border_color'];
+
+            // ========== ADVANCED ========== //
+
+            $sanitized['custom_css'] = isset($input['custom_css'])
+                ? wp_strip_all_tags($input['custom_css'])
+                : $defaults['custom_css'];
 
             // ========== REVIEW SYSTEM ========== //
 

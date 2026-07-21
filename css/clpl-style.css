@@ -15,6 +15,7 @@
     width:150px;
     border:1px solid #e9dddd;
     margin:20px 0;
+    overflow:hidden;
 }
 #clpl_logo_container img, #clpl_bg_img_container img {
     width:150px; 
@@ -26,10 +27,14 @@
 .clpl-admin-wrapper .clpl-section h3{
     font-size: 16px;
 }
-.clpl-admin-wrapper .clpl-section input[type=url]{
+.clpl-admin-wrapper .clpl-section input[type=url],
+.clpl-admin-wrapper .clpl-section-wrapper-bg-type-img input[type=url]
+{
     width:350px;
 } 
-.clpl-admin-wrapper .clpl-section .button-secondary{
+.clpl-admin-wrapper .clpl-section .button-secondary,
+.clpl-admin-wrapper .clpl-section-wrapper-bg-type-img .button-secondary
+{
     margin-left:45px;
 }
 .clpl-admin-wrapper .clpl-pro-badge {
@@ -92,7 +97,7 @@
 }
 
 .clpl-section .clpl-switch input:checked + .clpl-slider {
-    background-color: #2271b1;
+    background-color: #3858e9;
 }
 
 .clpl-section .clpl-switch input:checked + .clpl-slider:before {

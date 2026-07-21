@@ -3,20 +3,19 @@ Contributors: Horendra
 Donate link: https://www.paypal.me/horendrasingh
 Tags: login page customizer, wordpress login logo, custom login page, white label login, login background
 Requires at least: 4.7
-Tested up to: 6.9.4
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.4.4
-Version: 1.4.4
+Version: 1.4.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Lightweight WordPress login customizer— logo, background, form & language switcher. No bloat, no coding.
+Lightweight WordPress login customizer— logo, background, form, language switcher, and custom css. No bloat, no coding.
 
 == Description ==
 
 Make your WordPress login page look professional, modern, and fully branded — without writing a single line of code.
 
-By default, WordPress displays its own logo and a simple background on the login screen. This plugin allows you to replace the default logo and customize the login background to match your brand identity.
+By default, WordPress displays its own logo and a simple background on the login screen. This plugin allows you to replace the default logo and customize the login form, background, language switcher and add your own custom css to match your brand identity.
 
 Whether you are a freelancer, agency, business owner, or developer, you can create a clean and professional login experience in minutes.
 
@@ -40,7 +39,7 @@ Whether you are a freelancer, agency, business owner, or developer, you can crea
 
 = Login Form Customization =
 
-* Login form background and label color
+* Login form background, border and label color
 * Password eye icon and password reset color
 * Login button background, border and text color
 * Input field background, text and border color
@@ -55,12 +54,20 @@ Whether you are a freelancer, agency, business owner, or developer, you can crea
 * Language Switcher Button - background color, text color, border color
 * Language Switcher Button hover - background color, text color, border color
 
+= Custom CSS =
+
+* Add your own custom css
+
 = Lightweight & Optimized =
 
 * No impact on front-end performance
 * Clean and simple settings interface
 * Beginner-friendly and easy to use
 * Translation ready
+
+= Upcoming Feature =
+
+* A new Tab "Notice" is coming soon. It will help to customize your notice Wordpress shows you
 
 Have a feature request? Let us know through a review — your feedback helps shape future updates!
 
@@ -134,13 +141,17 @@ YES, For support or inquiries, please fill out the following [form](https://form
 
 == Screenshots ==
 
-1. Logo Tab (screenshot-1.png)
-2. Background Tab (screenshot-2.png)
-3. Login form Tab (screenshot-3.png)
-4. Language Switcher Tab (screenshot-4.png)
-5. Customized Login Page (screenshot-5.png)
+1. Logo Tab
+2. Background Tab
+3. Login form Tab
+4. Language Switcher Tab
+5. Advanced Tab
+5. Customized Login Page
 
 == Changelog ==
+
+= 1.4.5 =
+* Custom CSS functionality is added
 
 = 1.4.4 =
 * A new look of the plugin is created
