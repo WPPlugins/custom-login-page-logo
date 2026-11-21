@@ -20,7 +20,7 @@ Custom Login Page Logo lets you replace the default WordPress logo and customize
 
 Create a professional and branded login experience for your own website, client websites, agencies, businesses, and white-label WordPress projects.
 
-== Customize Your WordPress Login Page ==
+==  Customize Your WordPress Login Page  ==
 
 * Replace the default WordPress logo with your own
 * Customize logo size, padding, border radius, shadow, and link
@@ -34,7 +34,7 @@ Create a professional and branded login experience for your own website, client 
 * Configure your login page from the WordPress admin area
 * No coding required for the main customization options
 
-==  Features  ==
+== Features ==
 
 = Logo Customization =
 
@@ -42,213 +42,251 @@ Create a professional and branded login experience for your own website, client 
 * Upload your logo using the WordPress Media Library
 * Set custom logo width and height
 * Add a custom logo URL
-* Customize logo padding, shadow and border radius
+* Customize logo padding, shadow and border radius 
 
 = Background Customization =
 
 * Set a custom background color
 * Add a custom background image
-* Control background image size
-* Set background image position
-* Configure background image repeat
-* Add a background overlay color
-* Control background overlay opacity
+* Control background image size, position and image repeat
+* Add a background overlay color with opacity
 
 = Login Form Customization =
 
-* Login form background, border and label color
-* Password eye icon and password reset color
-* Login button background, border and text color
-* Input field background, text and border color
-* Set up Remember me (checkbox and checkmark) color
-* Go to site color
+* Customize login form background and border color
+* Customize label color
+* Customize input field background, text, and border colors
+* Customize login button background, border, and text colors
+* Customize password eye icon color
+* Customize password reset link color
+* Customize Remember Me checkbox and checkmark colors
+* Customize Go to site link color
 
 = Language Switcher Customization =
 
-* Language Switcher - background color, text color, border color, drop down arrow color
-* Language Switcher hover - background color, text color, border color
-* Language Switcher focus - background color, text color, border color
-* Language Switcher Button - background color, text color, border color
-* Language Switcher Button hover - background color, text color, border color
+* Customize language switcher background, text, and border colors
+* Customize dropdown arrow color
+* Customize language switcher hover colors, focus colors and button colors
 
 = Notice Customization =
 
-* Notice (Error) - background color, text color, border color
-* Notice (Info) - background color, text color, border color
+* Customize error notice background, text, and border colors
+* Customize information notice background, text, and border colors
 
 = Advanced Settings =
 
-* Add your own CSS
+* Add your own custom CSS
 
-= Lightweight & Optimized =
+= Lightweight & Focused =
 
-* No impact on front-end performance
+* Designed specifically for the WordPress login page
+* No unnecessary frontend customization features
 * Clean and simple settings interface
-* Beginner-friendly and easy to use
+* Beginner-friendly
 * Translation ready
 
 Have a feature request? Let us know through a review — your feedback helps shape future updates!
 
+== Perfect For ==
+
+Custom Login Page Logo is useful for:
+
+* ** Freelancers ** — create branded login pages for client websites
+* ** Agencies ** — customize login pages for client projects
+* ** Businesses ** — replace the default WordPress branding with your own
+* ** Developers ** — customize the login page without editing theme files
+* ** White-label projects ** — create a login experience that matches the client's brand
+* ** WordPress site owners ** — personalize the login page without coding
+
 == Why Use This Plugin? ==
 
-Your login page is often the first interaction users or clients have with your website. A branded login page:
+The WordPress login page is an important part of the experience for website administrators, clients, and other users who access the WordPress dashboard.
 
-* Improves brand consistency
-* Looks more professional
-* Enhances user trust
-* Perfect for client and white-label projects
+Custom Login Page Logo helps you replace the default WordPress appearance with a login page that better matches your website or brand.
 
-Instead of showing the default WordPress branding, display your own identity.
+With one focused settings interface, you can customize the logo, background, login form, language switcher, notices, and additional CSS without manually editing WordPress core files.
 
 == Easy Setup ==
 
-* Install and activate the plugin.
-* Navigate to the plugin settings page.
+* Install and activate Custom Login Page Logo.
+* Open the plugin settings from your WordPress admin area.
 * Upload your custom logo.
-* Configure background settings.
-* Save changes and refresh your login page.
+* Configure your background, login form, language switcher, and notice settings.
+* Add custom CSS if you need additional styling.
+* Save your changes and view your WordPress login page.
 
-Your branded login page is ready instantly.
+Your customized login page is ready.
 
 == Frequently Asked Questions ==
 
 = Will this slow down my website? =
 
-No. The plugin only loads scripts on the login page.
+The plugin is focused on the WordPress login page and its customization features are designed for the login screen.
 
 = Can I use my own background image? =
 
-Yes. You can upload any custom image and control its size and position.
+Yes. You can upload a custom background image and control its size, position, and repeat settings. You can also add a background overlay.
+
+= Can I change the WordPress login logo? =
+
+Yes. You can replace the default WordPress logo with your own logo and customize its width, height, padding, shadow, and border radius. You can also set a custom logo URL.
+
+= Can I customize the login form? =
+
+Yes. You can customize the login form, labels, input fields, login button, password-related elements, Remember Me controls, and the Go to site link.
+
+= Can I customize the WordPress language switcher? =
+
+Yes. You can customize the language switcher and its button, including background, text, border, dropdown arrow, hover, and focus colors.
+
+= Can I customize WordPress login notices? =
+
+Yes. You can customize the appearance of error and information notices, including their background, text, and border colors.
+
+= Can I add my own CSS? =
+
+Yes. The Advanced Settings section allows you to add your own custom CSS for additional login page customization.
 
 = Does this work with any theme? =
 
-Yes. It works independently of your active theme.
+Yes. The plugin works independently of your active WordPress theme because it customizes the WordPress login page.
 
 = Is coding knowledge required? =
 
-No. Everything is controlled via simple settings.
+No. The main customization options are available through the plugin settings. Custom CSS is available for users who want additional control.
 
-= Is it compatible with the latest WordPress version? =
+= Is the plugin translation ready? =
 
-Yes, it works with the latest version of WordPress.
+Yes. The plugin is translation ready.
 
-= Is this pugin translation ready? =
-YES, this plugin is translation ready for the following languages:-
+Currently available languages include:
 
-1. English (Default)
-2. Hindi
+English (default)
+
+Hindi
 
 = Do you offer support? =
 
-YES, For support or inquiries, please fill out the following [form](https://forms.gle/Y8HjwnVLBsuciXh97)
+Yes. For support or inquiries, please use the following [support form](https://forms.gle/Y8HjwnVLBsuciXh97).
+
+Have a feature request? Let us know through a review. Your feedback helps shape future updates.
 
 == Installation ==
 
-= From WordPress.org =
+= From WordPress Admin =
 
-1. Download "custom login page logo" plugin.
-1. Upload the plugin folder to your /wp-content/plugins/ folder.
-1. Go to the **Plugins** page and activate the plugin.
+Log in to your WordPress admin dashboard.
 
-= From Admin dashboard =
+Go to Plugins → Add New Plugin.
 
-1. Simply go to the **Plugins** admin menu 
-1. Click on **Add New Plugin**
-1. In the search plugins type **custom login page logo horendra**
-1. When you find it, click on **Install** and **activate**
+Search for Custom Login Page Logo.
+
+Click Install Now.
+
+Click Activate.
+
+Open the plugin settings and customize your WordPress login page.
+
+= Manual Installation =
+
+Download Custom Login Page Logo from WordPress.org.
+
+Upload the custom-login-page-logo folder to the /wp-content/plugins/ directory.
+
+Go to Plugins in your WordPress admin dashboard.
+
+Activate Custom Login Page Logo.
+
+Open the plugin settings and configure your login page.
 
 == Screenshots ==
 
-1. Logo Tab
-2. Background Tab
-3. Login form Tab
-4. Language Switcher Tab
-5. Notification Tab
-6. Advanced Tab
-7. Customized Login Page
+1. Logo customization settings — Replace the default WordPress logo and customize its size, padding, border radius, and shadow.
+2. Background customization settings — Add a background color or image and configure its position, size, repeat, and overlay.
+3. Login form customization settings — Customize the login form, input fields, labels, buttons, and links.
+4. Language switcher customization settings — Customize the language switcher, button, hover, and focus states.
+5. Notice customization settings — Customize WordPress login error and information notices.
+6. Advanced settings — Add custom CSS for additional login page customization.
+7.Customized WordPress login page — Example of a branded login screen.
 
 == Changelog ==
 
 = 1.4.6 =
-* Admin Menu name is updated
-* Compatible to 7.1.1
+* Updated the admin menu name.
+* Updated WordPress compatibility to 7.1.1
 
 = 1.4.5 =
-* Custom CSS is added
-* Compatible to wordpress 7.0.6
+* Added Custom CSS settings.
+* Updated WordPress compatibility to 7.0.6
 
 = 1.4.4 =
-* A new look of the plugin is created
-* Logo display option is added
-* Background Type option is added
-* Compatible to wordpress 7.0.1
+* Redesigned the plugin interface.
+* Added logo display options.
+* Added background type options.
+* Updated WordPress compatibility to 7.0.1
 
 = 1.4.3 =
-* Language switcher tab is added
-* Language Switcher- background color, text color, border color and drop down arrow color is added
-* Button- background color, text color and border color is added
-* Language Switcher on hover- background color, text color and border color is added
-* Button on hover- background color, text color and border color is added
-* Language Switcher on focus- background color, text color and border color is added
-* Compatible to wordpress 6.9.9
+* Added Language Switcher customization.
+* Added language switcher background, text, border, and dropdown arrow color options.
+* Added language switcher button color options.
+* Added hover and focus color options for the language switcher and button.
+* Updated WordPress compatibility to 6.9.9
 
 = 1.4.2 =
-* Login form tab is added
-* Login form background and label color are added
-* Input field- background, border and text color are added
-* Button- background, border and text color are added
-* Password eye icon and Password reset color are added
-* Remember me (checkmark and checkbox) color are added.
-* Go to site color is added
-* Compatible to wordpress 6.9.1
+* Added Login Form customization.
+* Added login form background and label color options.
+* Added input field background, border, and text color options.
+* Added login button background, border, and text color options.
+* Added password eye icon and password reset link color options.
+* Added Remember Me checkbox and checkmark color options.
+* Added Go to site link color option.
+* Updated WordPress compatibility to 6.9.1
 
 = 1.4.1 =
-* Background Tab is added
-* Background color is added
-* Background image is added
-* Background image - position, repeat, size is added
-* Background overlay is added
-* Compatible to wordpress 6.8.10
+* Added Background customization.
+* Added background color and image options.
+* Added background image position, repeat, and size options.
+* Added background overlay options.
+* Updated WordPress compatibility to 6.8.10
 
 = 1.4 =
-* Code is improved
-* Database is changed
-* Tabs are added
-* Features are divided into tabs
-* Background color is added 
-* Compatible to wordpress 6.8.1
+* Improved plugin code and functionality.
+* Updated database structure.
+* Added tabbed settings interface.
+* Organized customization features into separate tabs.
+* Added background color option.
+* Updated WordPress compatibility to 6.8.1
 
 = 1.3.2 =
-* Logo radius is added
-* Logo padding is added
-* Translation file is Updated
-* Compatible to wordpress 6.7.9
+* Added logo border radius.
+* Added logo padding.
+* Updated translation files.
+* Updated WordPress compatibility to 6.7.9
 
 = 1.3.1 =
-* Short, and Long Description are updated
-* Screenshote are updated
-* Titles are added
-* Logo redirect URL is added
-* Logo shadow is added
-* Descriptions are added
-* Plugin logo is changed
-* File names are changed
-* New php file is created for separate css
-* Update Translation file
-* Compatible to wordpress 6.7.1
+* Updated short and long descriptions.
+* Updated screenshots.
+* Added logo title and description options.
+* Added custom logo redirect URL.
+* Added logo shadow.
+* Added plugin logo.
+* Improved plugin file organization.
+* Added separate CSS functionality.
+* Updated translation files.
+* Updated WordPress compatibility to 6.7.2
 
 = 1.3 =
-* Add height and width including unit for Logo
-* Improve coding and functionality
-* Update Translation file
-* Compatible to wordpress 6.6.9
+* Added logo width and height controls with units.
+* Improved plugin code and functionality.
+* Updated translation files.
+* Updated WordPress compatibility to 6.6.9
 
 = 1.2 =
-* Translation ready
+* Added translation support.
 
 = 1.1 =
-* Compatible to wordpress 6.6.1.
-* Description updated
+* Updated plugin description.
+* Updated WordPress compatibility to 6.6.1
 
 = 1.0 =
-* Plugin released.
+* Initial plugin release.
