@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function clpl_logo_menu() {
     add_menu_page(
         esc_html__('Custom Login Logo', 'custom-login-page-logo'),
-        esc_html__('Login Logo', 'custom-login-page-logo'),
+        esc_html__('Login Customizer', 'custom-login-page-logo'),
         'manage_options',
         'clpl-logo-settings',
         'clpl_logo_settings_page',

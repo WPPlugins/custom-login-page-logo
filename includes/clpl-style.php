@@ -74,6 +74,16 @@ function clpl_enqueue_styles() {
     $lang_switch_btn_hover_bg_color         = $options['lang_switch_btn_hover_bg_color'];
     $lang_switch_btn_hover_txt_color        = $options['lang_switch_btn_hover_txt_color'];
     $lang_switch_btn_hover_border_color     = $options['lang_switch_btn_hover_border_color'];
+
+    // ========== NOTICE ========== //
+
+    $notice_error_bg_color          = $options['notice_error_bg_color'];
+    $notice_error_txt_color         = $options['notice_error_txt_color'];
+    $notice_error_border_color      = $options['notice_error_border_color'];
+
+    $notice_info_bg_color           = $options['notice_info_bg_color'];
+    $notice_info_txt_color          = $options['notice_info_txt_color'];
+    $notice_info_border_color       = $options['notice_info_border_color'];
     
     // ========== BACKGROUND ========== //
 
@@ -360,6 +370,37 @@ function clpl_enqueue_styles() {
                 }';
             }
         }
+
+        // ========== NOTICE ========== //
+
+        if( ! empty($notice_error_bg_color) ) {
+            echo'.login .notice-error { background-color:' . esc_attr($notice_error_bg_color)
+            . '!important;
+            }';        
+        }
+        if( ! empty($notice_error_txt_color) ) {
+            echo'.login .notice-error { color:' . esc_attr($notice_error_txt_color)
+            . '!important;
+            }';        
+        }
+        if( ! empty($notice_error_border_color) ) {
+            echo'.login .notice-error { border-left-color:' . esc_attr($notice_error_border_color)
+            . '!important;
+            }';        
+        }
+        if( ! empty($notice_info_bg_color) ) {
+            echo'.login .message, .login .notice-info { background-color:' . esc_attr($notice_info_bg_color) . '!important;
+            }';        
+        }
+        if( ! empty($notice_info_txt_color) ) {
+            echo'.login .notice, .login .notice-info { color:' . esc_attr($notice_info_txt_color)
+                . '!important;
+            }';        
+        }
+        if( ! empty($notice_info_border_color) ) {
+            echo'.login .message, .login .notice-info {border-left-color:'.esc_attr($notice_info_border_color) . '!important;
+            }';        
+        } 
                 
     echo'</style>';
 }

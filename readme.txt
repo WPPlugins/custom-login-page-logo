@@ -3,39 +3,56 @@ Contributors: Horendra
 Donate link: https://www.paypal.me/horendrasingh
 Tags: login page customizer, wordpress login logo, custom login page, white label login, login background
 Requires at least: 4.7
-Tested up to: 7.0
+Tested up to: 7.1.1
 Requires PHP: 7.4
-Version: 1.4.5
+Stable tag: 1.4.6
+Version: 1.4.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Lightweight WordPress login customizer— logo, background, form, language switcher, and custom css. No bloat, no coding.
+Lightweight WordPress Login Page Customizer — Logo, Background, Form, Language Switcher, Notices and Custom CSS. No coding required.
 
 == Description ==
 
-Make your WordPress login page look professional, modern, and fully branded — without writing a single line of code.
+Customize and brand your WordPress login page without writing code.
 
-By default, WordPress displays its own logo and a simple background on the login screen. This plugin allows you to replace the default logo and customize the login form, background, language switcher and add your own custom css to match your brand identity.
+Custom Login Page Logo lets you replace the default WordPress logo and customize your login page background, login form, language switcher, notices, and more from a simple settings interface.
 
-Whether you are a freelancer, agency, business owner, or developer, you can create a clean and professional login experience in minutes.
+Create a professional and branded login experience for your own website, client websites, agencies, businesses, and white-label WordPress projects.
+
+== Customize Your WordPress Login Page ==
+
+* Replace the default WordPress logo with your own
+* Customize logo size, padding, border radius, shadow, and link
+* Add a custom login page background color or image
+* Control background image size, position, and repeat
+* Add a background overlay with adjustable color and opacity
+* Customize login form, input fields, labels, buttons, and links
+* Customize the WordPress language switcher
+* Customize login error and information notices
+* Add your own custom CSS for additional control
+* Configure your login page from the WordPress admin area
+* No coding required for the main customization options
 
 ==  Features  ==
 
 = Logo Customization =
 
 * Replace the default WordPress logo
+* Upload your logo using the WordPress Media Library
 * Set custom logo width and height
 * Add a custom logo URL
-* Add padding, shadow, and border radius
-* Easy media uploader support
+* Customize logo padding, shadow and border radius
 
 = Background Customization =
 
-* Set a custom background color and image
-* Control background size (cover / contain)
-* Set background position
-* Configure background repeat
-* Add background overlay color and opacity
+* Set a custom background color
+* Add a custom background image
+* Control background image size
+* Set background image position
+* Configure background image repeat
+* Add a background overlay color
+* Control background overlay opacity
 
 = Login Form Customization =
 
@@ -54,9 +71,14 @@ Whether you are a freelancer, agency, business owner, or developer, you can crea
 * Language Switcher Button - background color, text color, border color
 * Language Switcher Button hover - background color, text color, border color
 
-= Custom CSS =
+= Notice Customization =
 
-* Add your own custom css
+* Notice (Error) - background color, text color, border color
+* Notice (Info) - background color, text color, border color
+
+= Advanced Settings =
+
+* Add your own CSS
 
 = Lightweight & Optimized =
 
@@ -64,10 +86,6 @@ Whether you are a freelancer, agency, business owner, or developer, you can crea
 * Clean and simple settings interface
 * Beginner-friendly and easy to use
 * Translation ready
-
-= Upcoming Feature =
-
-* A new Tab "Notice" is coming soon. It will help to customize your notice Wordpress shows you
 
 Have a feature request? Let us know through a review — your feedback helps shape future updates!
 
@@ -145,18 +163,25 @@ YES, For support or inquiries, please fill out the following [form](https://form
 2. Background Tab
 3. Login form Tab
 4. Language Switcher Tab
-5. Advanced Tab
-5. Customized Login Page
+5. Notification Tab
+6. Advanced Tab
+7. Customized Login Page
 
 == Changelog ==
 
+= 1.4.6 =
+* Admin Menu name is updated
+* Compatible to 7.1.1
+
 = 1.4.5 =
-* Custom CSS functionality is added
+* Custom CSS is added
+* Compatible to wordpress 7.0.6
 
 = 1.4.4 =
 * A new look of the plugin is created
 * Logo display option is added
 * Background Type option is added
+* Compatible to wordpress 7.0.1
 
 = 1.4.3 =
 * Language switcher tab is added
@@ -165,6 +190,7 @@ YES, For support or inquiries, please fill out the following [form](https://form
 * Language Switcher on hover- background color, text color and border color is added
 * Button on hover- background color, text color and border color is added
 * Language Switcher on focus- background color, text color and border color is added
+* Compatible to wordpress 6.9.9
 
 = 1.4.2 =
 * Login form tab is added
@@ -174,6 +200,7 @@ YES, For support or inquiries, please fill out the following [form](https://form
 * Password eye icon and Password reset color are added
 * Remember me (checkmark and checkbox) color are added.
 * Go to site color is added
+* Compatible to wordpress 6.9.1
 
 = 1.4.1 =
 * Background Tab is added
@@ -181,6 +208,7 @@ YES, For support or inquiries, please fill out the following [form](https://form
 * Background image is added
 * Background image - position, repeat, size is added
 * Background overlay is added
+* Compatible to wordpress 6.8.10
 
 = 1.4 =
 * Code is improved
@@ -188,11 +216,13 @@ YES, For support or inquiries, please fill out the following [form](https://form
 * Tabs are added
 * Features are divided into tabs
 * Background color is added 
+* Compatible to wordpress 6.8.1
 
 = 1.3.2 =
 * Logo radius is added
 * Logo padding is added
 * Translation file is Updated
+* Compatible to wordpress 6.7.9
 
 = 1.3.1 =
 * Short, and Long Description are updated
@@ -205,11 +235,13 @@ YES, For support or inquiries, please fill out the following [form](https://form
 * File names are changed
 * New php file is created for separate css
 * Update Translation file
+* Compatible to wordpress 6.7.1
 
 = 1.3 =
 * Add height and width including unit for Logo
 * Improve coding and functionality
 * Update Translation file
+* Compatible to wordpress 6.6.9
 
 = 1.2 =
 * Translation ready

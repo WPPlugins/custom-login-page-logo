@@ -97,7 +97,7 @@
 }
 
 .clpl-section .clpl-switch input:checked + .clpl-slider {
-    background-color: #3858e9;
+    background-color: var(--wp-admin-theme-color);
 }
 
 .clpl-section .clpl-switch input:checked + .clpl-slider:before {

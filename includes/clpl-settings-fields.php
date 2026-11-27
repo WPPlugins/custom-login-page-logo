@@ -50,6 +50,14 @@
                 </a>
                 <a href="<?php 
                             echo esc_url(
+                                admin_url('admin.php?page=clpl-logo-settings&tab=notice')
+                            );
+                        ?>"
+                   class="nav-tab <?php echo ($active_tab == 'notice') ? 'nav-tab-active' : ''; ?>">
+                   Notifications
+                </a>
+                <a href="<?php 
+                            echo esc_url(
                                 admin_url('admin.php?page=clpl-logo-settings&tab=advanced')
                             );
                         ?>"
@@ -69,6 +77,9 @@
                             break;
                         case 'language':
                             do_settings_sections('clpl_language_tab');
+                            break;
+                        case 'notice':
+                            do_settings_sections('clpl_notice_tab');
                             break;
                         case 'advanced':
                             do_settings_sections('clpl_advanced_tab');
@@ -383,7 +394,7 @@
         $form_btn_bg_color = clpl_get_option('form_btn_bg_color');
         echo '<input type="text" name="clpl_settings[form_btn_bg_color]" id="clpl_form_btn_bg_color" 
         class="clpl-color-field" title="Select form button background color" 
-        value="' . esc_attr($form_btn_bg_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($form_btn_bg_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select form button background color', 'custom-login-page-logo').')</p>';
     }
 
@@ -393,7 +404,7 @@
         $form_eye_icon_color = clpl_get_option('form_eye_icon_color');
         echo '<input type="text" name="clpl_settings[form_eye_icon_color]" id="clpl_form_eye_icon_color" 
         class="clpl-color-field" title="Select form eye icon color" 
-        value="' . esc_attr($form_eye_icon_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($form_eye_icon_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select form eye icon color', 'custom-login-page-logo').')</p>';
     }
 
@@ -433,7 +444,7 @@
         $form_btn_border_color = clpl_get_option('form_btn_border_color');
         echo '<input type="text" name="clpl_settings[form_btn_border_color]" id="clpl_form_btn_border_color" 
         class="clpl-color-field" title="Select form button border color" 
-        value="' . esc_attr($form_btn_border_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($form_btn_border_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select form button border color', 'custom-login-page-logo').')</p>';
     }
 
@@ -443,7 +454,7 @@
         $form_txtfield_border_color = clpl_get_option('form_txtfield_border_color');
         echo '<input type="text" name="clpl_settings[form_txtfield_border_color]" id="clpl_form_txtfield_border_color" 
         class="clpl-color-field" title="Select form textfield border color" 
-        value="' . esc_attr($form_txtfield_border_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($form_txtfield_border_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select form textfield border color', 'custom-login-page-logo').')</p>';
     }
 
@@ -453,7 +464,7 @@
         $form_remember_checkmark_color = clpl_get_option('form_remember_checkmark_color');
         echo '<input type="text" name="clpl_settings[form_remember_checkmark_color]" id="clpl_form_remember_checkmark_color" 
         class="clpl-color-field" title="Select form checkmark color" 
-        value="' . esc_attr($form_remember_checkmark_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($form_remember_checkmark_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select form remember checkmark color', 'custom-login-page-logo').')</p>';
     }
 
@@ -530,7 +541,7 @@
         $lang_switch_select_border_color = clpl_get_option('lang_switch_select_border_color');
         echo '<input type="text" name="clpl_settings[lang_switch_select_border_color]" id="clpl_lang_switch_select_border_color" 
         class="clpl-color-field" title="Select language switcher select border color" 
-        value="' . esc_attr($lang_switch_select_border_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_select_border_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher select border color', 'custom-login-page-logo').')</p>';
     }
 
@@ -540,7 +551,7 @@
         $lang_switch_select_arrow_color = clpl_get_option('lang_switch_select_arrow_color');
         echo '<input type="text" name="clpl_settings[lang_switch_select_arrow_color]" id="clpl_lang_switch_select_arrow_color" 
         class="clpl-color-field" title="Select language switcher Arrow color" 
-        value="' . esc_attr($lang_switch_select_arrow_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_select_arrow_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher arrow color', 'custom-login-page-logo').')</p>';
     }
 
@@ -550,7 +561,7 @@
         $lang_switch_select_hover_bg_color = clpl_get_option('lang_switch_select_hover_bg_color');
         echo '<input type="text" name="clpl_settings[lang_switch_select_hover_bg_color]" id="clpl_lang_switch_select_hover_bg_color" 
         class="clpl-color-field" title="Select language switcher select hover bg color" 
-        value="' . esc_attr($lang_switch_select_hover_bg_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_select_hover_bg_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher select hover background color', 'custom-login-page-logo').')</p>';
     }
 
@@ -560,7 +571,7 @@
         $lang_switch_select_hover_txt_color = clpl_get_option('lang_switch_select_hover_txt_color');
         echo '<input type="text" name="clpl_settings[lang_switch_select_hover_txt_color]" id="clpl_lang_switch_select_hover_txt_color" 
         class="clpl-color-field" title="Select language switcher select hover text color" 
-        value="' . esc_attr($lang_switch_select_hover_txt_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_select_hover_txt_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher select hover text color', 'custom-login-page-logo').')</p>';
     }
 
@@ -570,7 +581,7 @@
         $lang_switch_select_hover_border_color = clpl_get_option('lang_switch_select_hover_border_color');
         echo '<input type="text" name="clpl_settings[lang_switch_select_hover_border_color]" id="clpl_lang_switch_select_hover_border_color" 
         class="clpl-color-field" title="Select language switcher select hover border color" 
-        value="' . esc_attr($lang_switch_select_hover_border_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_select_hover_border_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher select hover border color', 'custom-login-page-logo').')</p>';
     }
 
@@ -580,7 +591,7 @@
         $lang_switch_select_focus_bg_color = clpl_get_option('lang_switch_select_focus_bg_color');
         echo '<input type="text" name="clpl_settings[lang_switch_select_focus_bg_color]" id="clpl_lang_switch_select_focus_bg_color" 
         class="clpl-color-field" title="Select language switcher select focus background color" 
-        value="' . esc_attr($lang_switch_select_focus_bg_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_select_focus_bg_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher select focus background color', 'custom-login-page-logo').')</p>';
     }
 
@@ -590,7 +601,7 @@
         $lang_switch_select_focus_txt_color = clpl_get_option('lang_switch_select_focus_txt_color');
         echo '<input type="text" name="clpl_settings[lang_switch_select_focus_txt_color]" id="clpl_lang_switch_select_focus_txt_color" 
         class="clpl-color-field" title="Select language switcher select focus text color" 
-        value="' . esc_attr($lang_switch_select_focus_txt_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_select_focus_txt_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher select focus text color', 'custom-login-page-logo').')</p>';
     }
 
@@ -600,7 +611,7 @@
         $lang_switch_select_focus_border_color = clpl_get_option('lang_switch_select_focus_border_color');
         echo '<input type="text" name="clpl_settings[lang_switch_select_focus_border_color]" id="clpl_lang_switch_select_focus_border_color" 
         class="clpl-color-field" title="Select language switcher select focus border color" 
-        value="' . esc_attr($lang_switch_select_focus_border_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_select_focus_border_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher select focus border color', 'custom-login-page-logo').')</p>';
     }
 
@@ -622,7 +633,7 @@
         $lang_switch_btn_txt_color = clpl_get_option('lang_switch_btn_txt_color');
         echo '<input type="text" name="clpl_settings[lang_switch_btn_txt_color]" id="clpl_lang_switch_btn_txt_color" 
         class="clpl-color-field" title="Select language switcher button text color" 
-        value="' . esc_attr($lang_switch_btn_txt_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_btn_txt_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher button text color', 'custom-login-page-logo').')</p>';
     }
 
@@ -632,7 +643,7 @@
         $lang_switch_btn_border_color = clpl_get_option('lang_switch_btn_border_color');
         echo '<input type="text" name="clpl_settings[lang_switch_btn_border_color]" id="clpl_lang_switch_btn_border_color" 
         class="clpl-color-field" title="Select language switcher button border color" 
-        value="' . esc_attr($lang_switch_btn_border_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_btn_border_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher button border color', 'custom-login-page-logo').')</p>';
     }
 
@@ -642,7 +653,7 @@
         $lang_switch_btn_hover_bg_color = clpl_get_option('lang_switch_btn_hover_bg_color');
         echo '<input type="text" name="clpl_settings[lang_switch_btn_hover_bg_color]" id="clpl_lang_switch_btn_hover_bg_color" 
         class="clpl-color-field" title="Select language switcher button hover background color" 
-        value="' . esc_attr($lang_switch_btn_hover_bg_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_btn_hover_bg_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher button hover background color', 'custom-login-page-logo').')</p>';
     }
 
@@ -652,7 +663,7 @@
         $lang_switch_btn_hover_txt_color = clpl_get_option('lang_switch_btn_hover_txt_color');
         echo '<input type="text" name="clpl_settings[lang_switch_btn_hover_txt_color]" id="clpl_lang_switch_btn_hover_txt_color" 
         class="clpl-color-field" title="Select language switcher button hover text color" 
-        value="' . esc_attr($lang_switch_btn_hover_txt_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_btn_hover_txt_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher button hover text color', 'custom-login-page-logo').')</p>';
     }
 
@@ -662,8 +673,73 @@
         $lang_switch_btn_hover_border_color = clpl_get_option('lang_switch_btn_hover_border_color');
         echo '<input type="text" name="clpl_settings[lang_switch_btn_hover_border_color]" id="clpl_lang_switch_btn_hover_border_color" 
         class="clpl-color-field" title="Select language switcher button hover border color" 
-        value="' . esc_attr($lang_switch_btn_hover_border_color) . '" data-default-color="#2271b1" />';
+        value="' . esc_attr($lang_switch_btn_hover_border_color) . '" data-default-color="#3858e9" />';
         echo '<p class="description clpl_description">('.esc_html__('Select language switcher button hover border color', 'custom-login-page-logo').')</p>';
+    }
+
+    // ========== DISPLAYS NOTICE ERROR BG COLOR ========== //
+
+    function clpl_notice_error_bg_color_callback(){
+     
+        $notice_error_bg_color = clpl_get_option('notice_error_bg_color');
+        echo '<input type="text" name="clpl_settings[notice_error_bg_color]" id="clpl_notice_error_bg_color" 
+        class="clpl-color-field" title="Select notice error bg color" 
+        value="' . esc_attr($notice_error_bg_color) . '" data-default-color="#fcf0f0" />';
+        echo '<p class="description clpl_description">('.esc_html__('Select notice error background color', 'custom-login-page-logo').')</p>';   
+    }
+
+    // ========== DISPLAYS NOTICE ERROR TEXT COLOR ========== //
+
+    function clpl_notice_error_text_color_callback(){
+        $notice_error_txt_color = clpl_get_option('notice_error_txt_color');
+        echo '<input type="text" name="clpl_settings[notice_error_txt_color]" id="clpl_notice_error_txt_color" 
+        class="clpl-color-field" title="Select notice error text color" 
+        value="' . esc_attr($notice_error_txt_color) . '" data-default-color="#3c434a" />';
+        echo '<p class="description clpl_description">('.esc_html__('Select notice error text color', 'custom-login-page-logo').')</p>';  
+    }
+
+    // ========== DISPLAYS NOTICE ERROR BORDER COLOR ========== //
+
+    function clpl_notice_error_border_color_callback(){
+        
+        $notice_error_border_color = clpl_get_option('notice_error_border_color');
+        echo '<input type="text" name="clpl_settings[notice_error_border_color]" id="clpl_notice_error_border_color" 
+        class="clpl-color-field" title="Select notice error border color" 
+        value="' . esc_attr($notice_error_border_color) . '" data-default-color="#cc1818" />';
+        echo '<p class="description clpl_description">('.esc_html__('Select notice error border color', 'custom-login-page-logo').')</p>'; 
+    }
+
+    // ========== DISPLAYS NOTICE INFO BG COLOR ========== //
+
+    function clpl_notice_info_bg_color_callback(){
+        
+        $notice_info_bg_color = clpl_get_option('notice_info_bg_color');
+        echo '<input type="text" name="clpl_settings[notice_info_bg_color]" id="clpl_notice_info_bg_color" 
+        class="clpl-color-field" title="Select notice info background color" 
+        value="' . esc_attr($notice_info_bg_color) . '" data-default-color="#FFFFFF" />';
+        echo '<p class="description clpl_description">('.esc_html__('Select notice info background color', 'custom-login-page-logo').')</p>';
+    }
+
+    // ========== DISPLAYS NOTICE INFO TEXT COLOR ========== //
+
+    function clpl_notice_info_text_color_callback(){
+        
+        $notice_info_txt_color = clpl_get_option('notice_info_txt_color');
+        echo '<input type="text" name="clpl_settings[notice_info_txt_color]" id="clpl_notice_info_txt_color" 
+        class="clpl-color-field" title="Select notice info text color" 
+        value="' . esc_attr($notice_info_txt_color) . '" data-default-color="#3c434a" />';
+        echo '<p class="description clpl_description">('.esc_html__('Select notice info text color', 'custom-login-page-logo').')</p>';
+    }
+
+    // ========== DISPLAYS NOTICE INFO BORDER COLOR ========== //
+
+    function clpl_notice_info_border_color_callback(){
+        
+        $notice_info_border_color = clpl_get_option('notice_info_border_color');
+        echo '<input type="text" name="clpl_settings[notice_info_border_color]" id="clpl_notice_info_border_color" 
+        class="clpl-color-field" title="Select notice info border color" 
+        value="' . esc_attr($notice_info_border_color) . '" data-default-color="#3858e9" />';
+        echo '<p class="description clpl_description">('.esc_html__('Select notice info border color', 'custom-login-page-logo').')</p>';
     }
 
     // ========== DISPLAYS ADVANCED ========== //
@@ -942,6 +1018,18 @@
                 'after_section'  => '</div>',
                 'section_class'  => 'clpl-section-wrapper-lang-switch'
             )
+        );
+        add_settings_section(
+            'clpl_notice_error_section',
+            __('Error Notice', 'custom-login-page-logo'),
+            '__return_false',
+            'clpl_notice_tab'
+        );
+        add_settings_section(
+            'clpl_notice_info_section',
+            __('Info Notice', 'custom-login-page-logo'),
+            '__return_false',
+            'clpl_notice_tab'
         );
         add_settings_section(
             'clpl_advanced_section',
@@ -1290,6 +1378,51 @@
             'clpl_language_switch_focus_color_section'
         );
 
+        // ========== NOTICES SETTINGS FIELDS ========== //
+        
+        add_settings_field(
+            'clpl_notice_error_bg_color',
+             __('Background Color', 'custom-login-page-logo'), // NOTICE ERROR BG COLOR
+            'clpl_notice_error_bg_color_callback',
+            'clpl_notice_tab',
+            'clpl_notice_error_section'
+        );
+        add_settings_field(
+            'clpl_notice_error_text_color',
+             __('Text Color', 'custom-login-page-logo'), // NOTICE ERROR TEXT COLOR
+            'clpl_notice_error_text_color_callback',
+            'clpl_notice_tab',
+            'clpl_notice_error_section'
+        );
+        add_settings_field(
+            'clpl_notice_error_border_color',
+             __('Border Color', 'custom-login-page-logo'), // NOTICE ERROR BORDER COLOR
+            'clpl_notice_error_border_color_callback',
+            'clpl_notice_tab',
+            'clpl_notice_error_section'
+        );
+        add_settings_field(
+            'clpl_notice_info_bg_color',
+             __('Background Color', 'custom-login-page-logo'), // NOTICE ERROR BG COLOR
+            'clpl_notice_info_bg_color_callback',
+            'clpl_notice_tab',
+            'clpl_notice_info_section'
+        );
+        add_settings_field(
+            'clpl_notice_info_text_color',
+             __('Text Color', 'custom-login-page-logo'), // NOTICE ERROR TEXT COLOR
+            'clpl_notice_info_text_color_callback',
+            'clpl_notice_tab',
+            'clpl_notice_info_section'
+        );
+        add_settings_field(
+            'clpl_notice_info_border_color',
+             __('Border Color', 'custom-login-page-logo'), // NOTICE ERROR BORDER COLOR
+            'clpl_notice_info_border_color_callback',
+            'clpl_notice_tab',
+            'clpl_notice_info_section'
+        );
+
         // ========== ADVANCED SETTINGS FIELDS ========== //
 
         add_settings_field(
@@ -1413,6 +1546,10 @@
                 $input['form_bg_color']
             ) ?: $defaults['form_bg_color'];
 
+            $sanitized['form_border_color']     = sanitize_hex_color(
+                $input['form_border_color']
+            ) ?: $defaults['form_border_color'];
+
             $sanitized['form_btn_bg_color']     = sanitize_hex_color(
                 $input['form_btn_bg_color']
             ) ?: $defaults['form_btn_bg_color'];
@@ -1428,10 +1565,6 @@
             $sanitized['form_btn_txt_color']   = sanitize_hex_color(
                 $input['form_btn_txt_color']
             ) ?: $defaults['form_btn_txt_color'];
-
-            $sanitized['form_border_color']   = sanitize_hex_color(
-                $input['form_border_color']
-            ) ?: $defaults['form_border_color'];
 
             $sanitized['form_btn_border_color']   = sanitize_hex_color(
                 $input['form_btn_border_color']
@@ -1528,6 +1661,26 @@
             $sanitized['lang_switch_btn_hover_border_color']   = sanitize_hex_color(
                 $input['lang_switch_btn_hover_border_color']
             ) ?: $defaults['lang_switch_btn_hover_border_color'];
+
+            // ========== NOTICE ========== //
+
+            $sanitized['notice_error_bg_color']  = sanitize_hex_color($input['notice_error_bg_color'])
+            ?: $defaults['notice_error_bg_color'];
+
+            $sanitized['notice_error_txt_color']  = sanitize_hex_color($input['notice_error_txt_color'])
+            ?: $defaults['notice_error_txt_color'];
+
+            $sanitized['notice_error_border_color']  = sanitize_hex_color($input['notice_error_border_color'])
+            ?: $defaults['notice_error_border_color'];
+
+            $sanitized['notice_info_bg_color']  = sanitize_hex_color($input['notice_info_bg_color'])
+            ?: $defaults['notice_info_bg_color'];
+
+            $sanitized['notice_info_txt_color']  = sanitize_hex_color($input['notice_info_txt_color'])
+            ?: $defaults['notice_info_txt_color'];
+
+            $sanitized['notice_info_border_color']  = sanitize_hex_color($input['notice_info_border_color'])
+            ?: $defaults['notice_info_border_color'];
 
             // ========== ADVANCED ========== //
 
